@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Đăng kí</title>
+	<style type="text/css">
+		body{
+			background-color: black;
+		}
+		#wapper{
+			background-image:url("https://haiquanonline.com.vn/stores/news_dataimages/ngandt/042020/10/11/in_article/1634_VVW05434a.jpg");
+			width: 90%; height: 660px;
+			background-repeat: no-repeat;
+			background-size: 100% 100%;
+			margin-left:56px;  
+
+		}
+		h1{
+			color: #FFF; font-weight: bolder;
+			font-family: sans-serif; letter-spacing: 7px; font-size: 30px;
+			padding: 20px; padding-top: 60px;
+		}
+		h3{
+			color: #FFF;
+			letter-spacing: 5px; font-size: 27px;
+			margin-left: 50px;
+		}
+		#tong{
+			display: flex; 
+		}
+		.gt{
+			width: 43%; height: 500px; background-color: none;
+
+		}
+		.gt p{
+			color: #FFF; font-weight: bold;
+			width: 200px; text-align: center;
+			padding-top: 10%; padding-left: 60px;
+			color: #333333;
+
+		}
+		.login{
+			width: 45%;height: 450px;
+			 padding-left: 70px;
+			 background-color: black;
+			 opacity: 0.89;
+		}
+
+		.login input{
+			line-height: 20px;
+			margin: 10px; width: 350px;height: 27px;
+			font-family: sans-serif; font-size: 15px;
+			background-color: #222222; color: #FFF;
+			border : 1px solid #111111; font-weight: bold; padding-left: 5px;
+		}
+		.login button {
+			padding: 12px 16px;  border-radius: 7px;
+			background-color: yellow; 
+			font-weight: bold; font-style: 17px;
+			border: 1px solid black; font-weight: bold;
+			margin-left: 10px; padding-left: 20px; padding-right: 20px; cursor: pointer;
+		}
+		.login button:hover{
+			background-color:#FFFF66;
+		}
+		.passs{
+			display: flex; font-size: 15px;
+		}
+		.strong {
+			width: 30px; font-size: 15px;
+		}
+		#link ul{display: flex; padding-left: 0px;}
+		#link li {
+			padding-left: 20px; list-style: none;
+		}
+		#link img {
+			width: 40px;
+		}
+		#link li:hover {
+			transform: scale(1.1); 
+		}
+		#menu {
+			width: 200px; height: 300px;
+			padding-top: 60px;
+		}
+		#nd1 {
+			display: none;color: red;
+			padding: 0px; margin: 0px;
+			line-height: 30px;
+			transition: 2s;
+
+		}
+		#menu h4 {
+			margin-left: 40px;
+			border: none;font-family: arial;
+			background-color: none; 
+			color: #BBBBBB; font-size: 17px;
+			font-weight: bold;transition: 1s;
+		}
+		#menu h4:hover{
+			color: yellow; 
+		}
+		#nd1 ul li{
+			list-style: none;
+		}
+		#nd1 ul li a{
+			text-decoration: none;
+			font-size: 17px; 
+			color:#AAAAAA; font-family: arial;
+		}
+		#nd1 ul li a:hover{
+			color: yellow;
+		}
+		#menu h4 a{
+			text-decoration: none;
+			color:#AAAAAA;transition: 1s;
+		}
+		#menu h4 a:hover{
+			color: yellow;
+		}
+	@media only screen and (max-width: 43em){
+		#wapper{
+			width: 60%;height: 860px;
+			background: black;
+			margin-left: 0px;
+			background-image: url('https://i.pinimg.com/originals/da/cc/c4/daccc4dbab13c70b3058e60d14314559.jpg');
+			width:100%; background-repeat: no-repeat;
+
+
+		}
+		#tong{
+			flex-direction: column;
+		}
+		h1{
+			width: 100%; font-family: times new roman;
+			 text-align: center;  font-weight: bolder;
+			font-size: 45px;
+			letter-spacing: 5px; color: yellow	;
+			 padding-bottom: 0px;
+			padding-left: 0;
+
+
+		}
+		
+		#menu {
+			height: 50px; color: black; display: flex;
+		}
+		.nd1 {
+			right: 0%;
+
+		}
+		.pnd{
+			display: none;
+		}
+		.login{
+			margin-left: 10px;
+			width: 90%; margin-top: 0px;
+			padding-left:20px;height: 450px;
+			padding-bottom: 20px; opacity: 0.9;
+		}
+		.login input {
+			width: 210px;
+		}
+		.gt{
+			height: 200px;
+		}
+		h3{
+			letter-spacing: 8px;
+		}
+	}
+	</style>
+</head>
+<body>
+	<div id="wapper">
+		<h1>TRUNG TÂM ẨM THỰC</h1>
+		<div id="tong">
+			<div class="gt">
+				<div id="menu">
+					<h4 onclick="menu()" id="ndme" title="Click">Menu</h4>
+					<div id="nd1" >
+						<ul>
+							<li>
+								<a href="move.html">Trang chủ</a>
+							</li>
+							<li>
+								<a href="">Food</a>
+							</li>
+						</ul>
+					</div>
+					<h4><a href="#">Giới thiệu</a></h4>
+					<h4><a href="#">Xem thêm</a></h4>
+				</div>
+			
+				<div class="pnd">
+				<p>Chào mừng bạn đến với Trung tâm ẩm thực, chúng tôi sẽ đem đến cho bạn một trải nghiệm mới lạ.</p>
+				</div>
+			</div>
+			<div class="login">
+				
+				<h3>LOGIN</h3>
+				<input type="text" name="" placeholder="Họ tên" id="name"><br>
+				<div class="passs">
+				<input type="password" name="" placeholder="password" id="pas" onkeyup ="passwor()">
+				<br><div id="strong">Độ mạnh mật khẩu</div><br>
+				</div>
+				<input type="email" name="e" placeholder="Email" id="e"><br>
+				<div class="passs">
+				<input type="text" name="" placeholder="Số điện thoại" id="num" onkeyup="so()" ><br><div id="of-num">Số điện thoại(0-9) </div>
+				</div>
+				<div id="link">
+					<p style="color: yellow;">Đăng nhập với</p>
+					<ul>
+						<li><a href ="https://vi-vn.facebook.com/">
+							<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/16/Facebook-icon-1.png/480px-Facebook-icon-1.png" title="Facebook">
+						</li></a>
+						<li><a href ="https://support.google.com/mail/answer/8494?hl=vi&co=GENIE.Platform%3DDesktop">
+							<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/7e/Gmail_icon_%282020%29.svg/2560px-Gmail_icon_%282020%29.svg.png" title="Gamil">
+						</li></a>
+						<li><a href ="https://twitter.com/i/flow/login?input_flow_data=%7B%22requested_variant%22%3A%22eyJsYW5nIjoidmkifQ%3D%3D%22%7D">
+							<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTLzMryeVMY8pZ5nn7NBBT27PZYPLjgoi8dPgDXDiyx9bYBt5UEeM0B6-BDSMP41uQbusM&usqp=CAU" title="Twitter">
+						</li></a>
+						<li><a href ="https://www.instagram.com/accounts/login/">
+							<img src="https://the7.vn/wp-content/uploads/2019/09/instagram-png-instagram-png-logo-1455.png" title="Instagram">
+						</li></a>
+					</ul>
+				</div>
+							<button onclick="ham()">Đăng kí</button>
+	
+				
+			</div>
+		</div>
+	</div>
+	<script type="text/javascript" language="javascript">
+		function menu(){
+			if(document.getElementById('nd1').style.display=='none'){
+				document.getElementById('nd1').style.display='block';
+			}else{
+				document.getElementById('nd1').style.display='none';
+			}
+		}
+		var arr=document.getElementsByTagName('input');
+			var name= arr[0].value;
+			var pas=arr[1].value;
+			var e= arr[2].value;
+			// phan login
+			function ham() {
+			var arr=document.getElementsByTagName('input');
+			var name= arr[0].value;
+			var pas=arr[1].value;
+			var e= arr[2].value;
+			var nu=arr[3].value;
+			if(name=="" ||pas=="" ||e=="" ||nu=="" ){
+				alert("bạn chưa nhập đủ thông tin");
+				document.getElementById('name').style.borderColor="red";
+				document.getElementById('pas').style.borderColor="red";
+				document.getElementById('e').style.borderColor="red";
+				document.getElementById('num').style.borderColor="red";
+				
+			}if((nu.length<10)|| (nu.length>12)){
+				alert("10-12 số!");
+				document.getElementById('num').value="";
+				document.getElementById('num').style.borderColor="red";
+			
+			}
+			else{
+				alert("Đã đang kí thành công!");
+				windowObjectReference=window.open ("https://b0fpvjmrf71mz5qassqtfw-on.drv.tw/fille3/trangchu.html")	
+				}
+
+			}
+		function passwor(){
+			if(document.getElementById("pas").value.length>6){
+				document.getElementById("strong").innerHTML="Good";	
+				document.getElementById("strong").style.color="yellow";
+				}
+			if(document.getElementById("pas").value.length<6){
+				document.getElementById("strong").innerHTML="Poor";	
+				document.getElementById("strong").style.color="red";
+				
+				}}
+		function so(){
+			var nu=arr[3].value;
+			nu.char[0];
+			if((isNaN(nu)) ){
+				
+				document.getElementById('of-num').style.color="red";
+				alert("Sai số điện thoại!")
+			}
+			
+		}		
+		
+			
+		
+	</script>
+	<hr />
+	
+</body>
+</html>

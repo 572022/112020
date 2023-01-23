@@ -1,0 +1,439 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<!-- <link rel="stylesheet" type="text/css" href="cssmove.css"> -->
+	<title>TRANG CHỦ</title>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<style type="text/css">
+	
+#wapper {
+	padding: 0px; margin: 0px; max-width: auto;
+}
+#head { width: 100%; height: auto;
+	background:#3ef770; padding:  5px;
+	margin: 0px; display: flex;
+ }
+ #menu { background-color: black; 
+ 	width: 70%; height: 45px;
+ 	position: relative; 
+ }
+ #menu > ul{display: flex; padding:0px; margin: 0px; }
+ #menu  li {list-style: none; padding: 0px; }
+ #menu > ul > li > a{
+ 	text-decoration: none; color: #FFF; 
+ 	font-family: arial; line-height: 45px; 
+ 	font-weight: bold;margin: 35px;
+ }
+ #menu > ul > li:hover {
+ 	background-color: green;
+ }
+ #menu2 { background-color: black; 
+ 	height: 100px; width: 130px; 
+ 	padding: 0px; margin: 0px; position: absolute;
+ 	display: none;  
+  }
+#menu2 li {list-style: none; margin: 0px; padding: 0px;}
+#menu2 ul li a{
+	text-decoration: none; line-height: 35px; 
+	padding: 0px; margin: 0px; color: #FFF;
+}
+#menu2 ul:hover{ background-color:green ; }
+#menu ul li:hover  #menu2 { display: block; 
+}
+#login {
+	padding: 10px; font-family: cursive;
+	box-shadow:0px 0px 10px 0px rgba(13, 95, 28, 0.716);
+}
+#login input{ margin-bottom: 5px; }
+#login a{ text-decoration: none; }
+#login button { border-radius: 2px; background-color:#000011; 
+color: #FFF; border: none; padding: 7px;}
+#login button:hover {
+	background-color: green;
+}
+#login img { width: 27px;height: auto; padding-left: 15px; }
+#login img:hover{ transform: scale(1.2, 1.2); }
+h3{ 
+	position: relative; padding: 0px; line-height: 45px;
+ }
+ h3:after{
+ 	content: "";
+ 	position: absolute;
+ 	width: 0; height: 100%;
+ 	left: auto; right: 0;
+ 	background-color: #CD2626; 
+ 	transition: 0.8s;
+ 	z-index: -1;
+ }
+ h3:hover:after {
+ 	width: 100%;
+ 	
+ 	right: auto; left: 0;
+ }
+ #sp img { width: 100%; height:auto; padding: 0px; 
+ 	position: relative;}
+ #sp { display: flex; flex-wrap: wrap; justify-content: space-around;}
+ #sp ul { margin: 5px; padding: 0px; width: 25%; height: auto; 
+ 	padding-bottom: 40px;background:#FFF;  }
+ #sp  ul li { list-style: none; } 
+ #sp  img:hover{
+ 	transform: scale(1.1, 1.1); transition: 0.6s ease-in-out;
+ 	opacity: 0.4; top: 20px; 
+ }
+ #sp #ndsp { padding: 0px; 
+ 	font-family: arial; font-weight: bold; 
+ 	
+ }
+
+ #sp a{ text-decoration: none;color: black; }
+ #travel {display: flex; margin: 0px; 
+ 	 padding:30px; margin: 30px; margin-left: 70px; }
+
+ #travel img { width: 80%; height: 300px; }
+
+#travel:hover { 
+	border:  1px solid #CCCCCC;background-color:#EEEEEE;
+}
+.nd_anh {  width: 35%;
+ padding: 0px; margin: 0px; font-family: serif; 
+ line-height: 20px;}
+.nd_anh button {
+	padding: 10px; border: none; border-radius: 5px;
+	background-color: #555555;
+}
+.nd_anh a { text-decoration: none; font-weight: bold;
+font-family: arial; size: 16px; color: #FFF; }
+.nd_anh button:hover {
+	background-color: black; 	
+}
+p.chuthich  {
+	font-family: sans-serif; font-weight: bold;
+	color: #770000;
+}
+#travel2 {
+	width: 75%; margin-left: 50px;
+}
+#travel2 ul{ display: flex; justify-content: space-around;}
+#travel2 ul li { list-style: none; overflow: hidden;
+
+ }
+#travel2 ul li img {
+	width: 200px; height: 270px; display: block;
+transition: all 0.6s ease-in-out;
+}
+#travel2 ul li:hover img {
+	transform: scale(1.2); opacity: 0.6;
+}
+#travel2 ul li:hover {
+	bottom: 4px; border: 1px solid #555555;
+
+}
+#travel2 ul li {
+	text-decoration: none; position: relative;
+	display: block;
+}
+#travel2 ul li .name {
+	position: absolute; color: black; font-weight: bolder;
+	left: 50%;transform: translateX(-50%); font-family: serif;
+}
+#travel2 ul li:hover .name {
+	bottom: 40%;
+
+}
+.slider{
+	width: 400px; height: 500px;
+}
+.slies{
+	display: flex; overflow: hidden; margin: 0px; 
+	padding: 0px;
+}
+.anh img {
+	width: 400px; height: 400px; display: block;
+}
+.slies input {
+	display: none;
+}
+.move{
+	position: absolute;
+	width: 500px; height: 40px; display: flex; 
+
+}
+.moves{
+	margin-left: 10px; width: 10px; height: 10px;
+	border: 1px solid red; margin-top: -30px;
+	border-radius: 50%; 
+}
+.moves:hover{
+	background-color: yellow;
+}
+#radio1:checked ~.class2{
+	margin-left: 0%;
+}
+#radio2:checked ~.class2{
+	margin-left: -100%;
+}
+#radio3:checked ~.class2{
+	margin-left: -200%;
+}
+/* menu_list */
+.fa_moblie{display: none;}
+#menu_mobile_tab{
+	position: fixed;
+	top: 0%;
+	bottom: 0%;
+	width: 100%; 
+	left: -100%;
+	transition:  0.3s;
+	z-index: 1;
+}
+#close_menu{
+	float:right;
+	font-size: 20px;
+	color: #fff;
+}
+#menu_list{
+	background-color: #000011;
+	width:50%;
+	position: fixed;
+	top: 0%;
+	bottom: 0%;
+}
+#menu_list li{
+	list-style: none;
+}
+#menu_list li a{
+	text-decoration: none;color: #fff;
+}
+/* table and mobile */
+@media screen and (max-width:1000px){
+	#menu{
+		display: none;
+	}
+	#head{display: block; font-size: small;
+	}
+	
+	.hidden{
+		display: none;
+	}
+	#travel{
+		display: block;
+		margin: 0px; 
+		padding: 1em;
+	}
+	#travel1 img{
+		width: 100%;
+	}
+	.nd_anh{width: 100%;}
+	#travel2{
+		width: 100%;
+		margin: 0%;
+	}
+	#travel2 ul {
+		display: block;
+	}
+	#travel2 ul li img{
+		width: 100%;
+		height: 60%;
+		margin: 0px auto;
+	}
+	.fa_moblie{
+		display: block; font-size: larger;}
+}
+
+</style>
+</head>
+<body>
+	<div id="wapper">
+		<div id="head">	<i class="fa fa-bars fa_moblie" id="menu-mob" onclick="show_menu2()"></i>
+			<div id="menu_mobile_tab">
+			
+				<div id="menu_list">
+					<a href="#" id="close_menu">X</a>
+					<ul>
+						<li><a href="#">Home</a>
+							<div id="menu2">
+						<ul>
+							<li><a href="#">Danh mục</a></li>
+	
+						</ul>
+						<ul>
+							<li><a href="#">Trắc nghiệm </a></li></ul>
+							<ul><li><a href="#">Đang theo dõi</a></li>
+							</ul></div>
+						</li>
+						<li><a href="#">Giải trí</a></li>
+						<li><a href="#">Công việc</a></li>
+						<li><a href="#">Sức khỏe</a></li>
+					</ul>
+				</div>
+			</div>
+			<div id="menu">
+				<ul>
+					<li><a href="#">Home</a>
+						<div id="menu2">
+					<ul>
+						<li><a href="#">Danh mục</a></li>
+
+					</ul>
+					<ul>
+						<li><a href="#">Trắc nghiệm </a></li></ul>
+						<ul><li><a href="#">Đang theo dõi</a></li>
+						</ul></div>
+					</li>
+					<li><a href="#">Giải trí</a></li>
+					<li><a href="#">Công việc</a></li>
+					<li><a href="#">Sức khỏe</a></li>
+				</ul>
+				
+			</div>
+		<div id="login"> 
+			<form action="#">
+			<input type="text" name="ten" placeholder="User name" size="33" style="border: none; padding: 3px;">
+			<br><input type="password" name="pas" placeholder="Password" size="33" style="border: none; padding: 3px;">
+			<br><button onclick="login()">Đăng nhập</button>
+			<button onclick="register()"><a href="dangki1.html">Đăng kí</a></button>
+			<br><a href="#">Quên mật khẩu</a><br>Đăng nhập với
+			<a href="move.html">
+				<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/16/Facebook-icon-1.png/600px-Facebook-icon-1.png">
+				<img src="https://icon-library.com/images/gmail-icon-png/gmail-icon-png-2.jpg">
+			</a>
+		</form>
+		</div>
+
+		</div>
+	</div>
+
+	<h3 id="nd" >Giới thiệu danh mục</h3>
+	<div id="sp">
+		<ul>
+			<li>
+				<a href="move.html">
+				<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ-hQeJJ0CcBJK5k5u4Zuq97L-HwJx4IXbWC8Rt8oZRwqbOvMVJn8yQDDEuiFGYwZPqaHg&usqp=CAU">
+			
+			</li>
+			<div id="ndsp">Mĩ phẩm </div></a>
+		</ul>
+			<ul>
+			<li><a href="move.html">
+				<img src="https://img.lovepik.com/photo/50080/3408.jpg_wh860.jpg">
+			</li><div id="ndsp">Thời trang </div></a>
+		</ul>
+		<ul>
+			<li><a href="move.html">
+				<img src="https://akisa.vn/uploads/plugin/product_items/13648/mau-noi-that-dep-sang-trong-nt22388-v1.jpg">
+			</li> <div id="ndsp">Nội thất </div></a>
+		</ul>
+		<ul>
+			<li><a href="move.html">
+				<img src="https://www.menudep.com/images/menu_design/800x500/20200111/516310164-Thie%CC%82%CC%81t-ke%CC%82%CC%81-menu-mo%CC%81n-A%CC%82u-15.jpg">
+			</li><div id="ndsp">Food </div></a>
+		</ul>
+		<ul>
+			<li><a href="move.html">
+				<img src="https://c.tadst.com/gfx/750x500/beverage-day.jpg">
+			</li><div id="ndsp">Drinks </div></a>
+		</ul>
+		<ul>
+			<li>
+				<a href="move.html">
+				<img src="https://www.ram.com/content/dam/cross-regional/emea/ramtrucks/en_me/2021/ram-migration/car-at-home/ipad-ram-1450x840-eng.jpg.img.1440.jpg">
+			</li><div id="ndsp">Xe</div></a>
+		</ul>
+
+	</div>
+	<h3 id="nd" >Travel</h3>
+	<div id="travel">
+		<div id="travel1">
+			<img src="https://onetour.vn/Media/Images/OneTour/tin-tuc/2018/11/mua-sam-qua-tang-du-lich-tai-nhat-ban.jpg"
+			id="anh" onclick ="changeimg()">
+		</div>
+		<div class="nd_anh"> 
+			<p>Nhật Bản là một trong những cường quốc văn minh hiện đại và sở hữu công nghệ bậc nhất thế giới. <div class="hidden"> Những năm gần đây Nhật Bản thu hút rất nhiều du khách đến thăm quan, du lịch bởi nét văn hóa truyền thống đa dạng cùng phong cảnh nên thơ hữu tình.</div></p>
+			<button><a href="#">Xem thêm</a></button></div>
+	</div>
+	<p class="chuthich"> Các địa điểm du lịch khác</p>
+	
+	<div id="travel2">
+			<ul>
+				<li><a href="#">
+					<img src="https://kyuchoian.com/userfiles/image/tour/hoi-an/2020/bo-anh-dep-hoi-an/ve-dem/ruc-ro-pho-co/ruc-ro-pho-co-1.jpg"><div class="name"> VIETNAM</div>
+				</a>
+				</li>
+				<li><a href="#">
+					<img src="https://i.pinimg.com/originals/f0/72/a0/f072a033c4fe6b634ee615dbda7bc9dc.jpg"><div class="name"> CHINA</div>
+				</a>
+				</li>
+				<li><a href="#">
+					<img src="https://images.fineartamerica.com/images/artworkimages/mediumlarge/2/san-francisco-skyline-aerial-view-matteo-colombo.jpg"><div class="name"> AMERICAN</div>
+				</a>
+				</li>
+				<li><a href="#">
+					<img src="http://bonbontravel.com.vn/userfiles/images/england-wal.jpg"><div class="name"> LONDON</div>
+				</a>
+				</li>
+			</ul></div> 
+</div>
+	<script type="text/javascript" language="">
+			function show_menu2(){
+				let menu=document.getElementById('menu_mobile_tab');
+				menu.style.left= 0+'%';
+			}
+			document.getElementById('close_menu').addEventListener('click',function(){
+				let menu=document.getElementById('menu_mobile_tab');
+				menu.style.left= -100+'%';
+			})
+
+			function cham(){
+				document.getElementById('nd').style.bgColor='red';
+			}
+			var index=1;
+			 function changeimg(){
+				var imgs= ['https://onetour.vn/Media/Images/OneTour/tin-tuc/2018/11/mua-sam-qua-tang-du-lich-tai-nhat-ban.jpg',
+				'https://vcdn-dulich.vnecdn.net/2020/01/14/182-1578988022-7425-1578991149.png',
+				'https://thumbor.forbes.com/thumbor/960x0/https%3A%2F%2Fspecials-images.forbesimg.com%2Fimageserve%2F6075b53ecb762de171ebb797%2FJapanese-street-crossing%2F960x0.jpg%3Ffit%3Dscale'];
+				document.getElementById('anh').src=imgs[index];
+				index++;
+				if (index==3){
+					index=0;
+				} }
+				
+			function login(){
+				var arr= document.getElementsByTagName('input');
+				var name= arr[0].value;
+				var pas= arr[1].value;
+					if (name=="" || pas==""){
+					alert('Bạn chưa nhập đủ thông tin!');
+					}else {
+						alert('Đã đăng nhập thành công!');
+					}
+				}
+
+				
+		</script>
+		<div class="slider" >
+			<div class="slies">
+				<input type="radio" name="chane" id="radio1">
+				<input type="radio" name="chane" id="radio2">
+				<input type="radio" name="chane" id="radio3">
+
+				<div class="anh class2">
+					<img src="https://onetour.vn/Media/Images/OneTour/tin-tuc/2018/11/mua-sam-qua-tang-du-lich-tai-nhat-ban.jpg" alt="anh">
+				</div>
+				<div class="anh">
+					<img src="https://vcdn-dulich.vnecdn.net/2020/01/14/182-1578988022-7425-1578991149.png" alt="anh">
+				</div>
+				<div class="anh">
+					<img src="https://onetour.vn/Media/Images/OneTour/tin-tuc/2018/11/mua-sam-qua-tang-du-lich-tai-nhat-ban.jpg" alt="anh">
+				</div>
+			</div>
+			<div class="move">
+				<label for="radio1" class="moves"></label>
+				<label for="radio2" class="moves"></label>
+				<label for="radio3" class="moves"></label>
+			</div>
+		</div>
+</body>
+
+</html>
